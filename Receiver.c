@@ -52,28 +52,9 @@ value=NRF_Read_Register_Value(STATUS);
 	return 0;
 }
 
-
-
-
 ISR(INT0_vect)	
 {
 cli();	
-CLEARBIT(PORTB, 0); //led off
-_delay_ms(100);
-SETBIT(PORTB, 0); //led on
-_delay_ms(100);
-CLEARBIT(PORTB, 0); //led off
-_delay_ms(100);
-SETBIT(PORTB, 0); //led on
-_delay_ms(100);
-CLEARBIT(PORTB, 0); //led off
-_delay_ms(100);
-SETBIT(PORTB, 0); //led on
-_delay_ms(100);
-CLEARBIT(PORTB, 0); //led off
-_delay_ms(100);
-SETBIT(PORTB, 0); //led on
-_delay_ms(100);
 CLEARBIT(PORTB, 0); //led off
 _delay_ms(100);
 SETBIT(PORTB, 0); //led on
